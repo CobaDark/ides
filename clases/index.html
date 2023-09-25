@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/iconn.png" type="image/png">
+    <title>IDES</title>
+    <script>
+        function redireccionar() {
+            var menu = document.getElementById("menuDesplegable");
+            var seleccion = menu.options[menu.selectedIndex].value;
+            if (seleccion !== "") {
+                window.open(seleccion, "_blank");
+            }
+        }
+        </script>
+    
+</head>
+
+<body>
+    
+    <header>
+        <div class="container">
+            <img src="media/IDES-removebg-preview-removebg-preview.png" alt="" class="logo">
+           <!-- <p class="logo">IDES</p>-->
+            <nav>
+                <a href="#somos-proya"> <u> Quienes somos </u></a>
+                <a href="#nuestrosprogramas"> <u> Nuestros Programas </u></a>
+                <a href="#caracteristicas"> <u> Contactános </u> </a>
+              
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <h1>INSTITUTO DE DESARROLLO <br>ECONÓMICO DEL SUR</h1>
+       
+    </section>
+    <secttion id="somos-proya">
+        <div class="container">
+
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>somos <span class="color-acento">IDES</span></h2>
+                <p>Somos un instituto que genera crecimiento y desarrollo comunitario al Municipio de Ipiales, mediante
+                    la estructuración de procesos encaminados a la implementación de planes, programas y proyectos
+                    relacionados con vivienda, turismo, emprendimiento y cooperación internacional; proporcionando
+                    bienestar, integración social y progreso a la comunidad.</p>
+            </div>
+        </div>
+    </secttion>
+    <section id="nuestrosprogramas">
+        <div class="container">
+            <h2>Nuestros programas</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3> Emprendimiento Regional </h3>
+                    <p>Nos enfocamos en descubrir oportunidades de negocio dentro de nuestra propia región. Es
+                        importante aprender a analizar nuestro mercado local, desarrollar estrategias de marketing
+                        específicas y crear empresas que no solo prosperen, sino que también contribuyan al crecimiento
+                        económico de nuestra comunidad.</p>
+                   
+
+                </div>
+                <div class="carta">
+                    <h3>Desarrollo de Habilidades Empresariales</h3>
+                    <p>Es esencial fortalecer nuestras habilidades en áreas como la gestión financiera, la planificación
+                        estratégica y el liderazgo. Estos conocimientos prácticos nos ayudarán a administrar nuestros
+                        negocios de manera efectiva y a contribuir al desarrollo económico de la región..</p>
+                    
+
+                </div>
+                <div class="carta">
+                    <h3>Innovación y Tecnología para Emprendedores</h3>
+                    <p>Nos sumergiremos en la innovación y la tecnología como herramientas clave para impulsar nuestros
+                        negocios. Aprenderemos a implementar soluciones tecnológicas, digitalizar procesos y crear
+                        productos y servicios innovadores que nos permitan destacar en un mercado globalizado.</p>
+                    
+                </div>
+                
+
+            </div>
+            <select id="menuDesplegable" onchange="redireccionar()">
+                <option value="">Emprendimientos:</option>
+                <option value="pagina1.html">Detalles Encantadores y Moda Elegante</option>
+                <option value="pagina2.html">MANUALIDADES DETALLITOS CON AMOR</option>
+                <option value="pagina3.html">Droguería Reina</option>
+            </select>
+        </div>
+       
+    </section>
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li> <strong>Dirección:</strong> Calle 6A # 9-36 Bloque 1 y 2, Barrio Alfonso López Ipiales - Nariño.</li>
+                <li> <strong>Teléfono:</strong> 602 7736402</li>
+                <li> <strong>E-mail:</strong> idesipiales@gmail.com ó idesipiales@hotmail.com</li>
+                <li><a href="https://www.facebook.com/Idesipiales">https://www.facebook.com/Idesipiales</a></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+            <p>&copy; 2023 emprendimientoides.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
